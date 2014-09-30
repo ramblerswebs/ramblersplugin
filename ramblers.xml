@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+    <name>System - Ramblers</name>
+    <author>Ramblers-webs</author>
+    <creationDate>October 2014</creationDate>
+    <copyright>Copyright (C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later.</license>
+    <authorEmail>admin@ramblers-webs.org.uk</authorEmail>
+    <authorUrl>www.ramblers-webs.org.uk</authorUrl>
+    <version>1.0.0</version>
+    <description>Simple example plugin to register Ramblers custom library.</description>
+ 
+    <files>
+        <filename plugin="ramblers">ramblers.php</filename>
+        <filename>index.html</filename>
+    </files>
+</extension>
