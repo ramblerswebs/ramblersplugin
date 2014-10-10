@@ -9,7 +9,9 @@
     <authorUrl>www.ramblers-webs.org.uk</authorUrl>
     <version>1.0.0</version>
     <description>Simple example plugin to register Ramblers custom library.</description>
- 
+    <updateservers>
+        <server type="extension" priority="1" name="Ramblers-webs plugin">http://updates.ramblers-webs.org.uk/ramblersplugin.xml</server>
+    </updateservers>  
     <files>
         <filename plugin="ramblers">ramblers.php</filename>
         <filename>index.html</filename>
