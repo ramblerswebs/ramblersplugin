@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.0" type="plugin" group="system" method="upgrade">
     <name>System - Ramblers</name>
-    <author>Ramblers-webs</author>
+    <author>Chris Vaughan Derby and South Derbyshire</author>
     <creationDate>October 2014</creationDate>
     <copyright>Copyright (C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
     <license>GNU General Public License version 2 or later.</license>
     <authorEmail>admin@ramblers-webs.org.uk</authorEmail>
     <authorUrl>www.ramblers-webs.org.uk</authorUrl>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
     <description>Simple example plugin to register Ramblers custom library.</description>
     <updateservers>
         <server type="extension" priority="1" name="Ramblers-webs plugin">http://updates.ramblers-webs.org.uk/ramblersplugin.xml</server>
