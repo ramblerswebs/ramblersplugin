@@ -7,10 +7,10 @@
     <license>GNU General Public License version 2 or later.</license>
     <authorEmail>admin@ramblers-webs.org.uk</authorEmail>
     <authorUrl>www.ramblers-webs.org.uk</authorUrl>
-    <version>1.3.0</version>
+    <version>1.4.0</version>
     <description>Simple example plugin to register Ramblers custom library.</description>
     <updateservers>
-        <server type="extension" priority="1" name="Ramblers-webs plugin">http://updates.ramblers-webs.org.uk/ramblersplugin.xml</server>
+        <server type="extension" priority="1" name="Ramblers-webs plugin">https://raw.githubusercontent.com/ramblerswebs/updates/master/updates/ramblersplugin.xml</server>
     </updateservers>  
     <files>
         <filename plugin="ramblers">ramblers.php</filename>
