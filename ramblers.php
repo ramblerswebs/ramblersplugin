@@ -21,7 +21,7 @@ class plgSystemRamblers extends JPlugin {
      */
     public function onAfterInitialise() {
         if (file_exists(JPATH_SITE . '/ramblers')) {
-            rename( JPATH_SITE . '/ramblersOLD', JPATH_SITE . '/ramblers') ;
+            rename(JPATH_SITE . '/ramblers', JPATH_SITE . '/ramblersOLD');
         }
         if (file_exists(JPATH_LIBRARIES . '/ramblers')) {
             JLoader::registerPrefix('R', JPATH_LIBRARIES . '/ramblers');
