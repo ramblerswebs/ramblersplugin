@@ -2,13 +2,13 @@
 <extension version="3.0" type="plugin" group="system" method="upgrade">
     <name>System - Ramblers</name>
     <author>Chris Vaughan Derby and South Derbyshire</author>
-    <creationDate>May 2020</creationDate>
-    <copyright>Copyright (C) 2005 - 2020 Open Source Matters. All rights reserved.</copyright>
+    <creationDate>24 August 2022</creationDate>
+    <copyright>Copyright (C) 2005 - 2022 Open Source Matters. All rights reserved.</copyright>
     <license>GNU General Public License version 2 or later.</license>
     <authorEmail>admin@ramblers-webs.org.uk</authorEmail>
     <authorUrl>www.ramblers-webs.org.uk</authorUrl>
-    <version>2.0.1</version>
-    <description>Simple example plugin to register Ramblers custom library.</description>
+    <version>2.0.2</version>
+    <description>Simple plugin to register Ramblers custom library.</description>
     <updateservers>
         <server type="extension" priority="1" name="Ramblers-webs plugin">https://raw.githubusercontent.com/ramblerswebs/updates/master/updates/ramblersplugin.xml</server>
     </updateservers>  

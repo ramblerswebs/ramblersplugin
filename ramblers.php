@@ -25,7 +25,26 @@ class plgSystemRamblers extends JPlugin {
         }
         if (file_exists(JPATH_LIBRARIES . '/ramblers')) {
             JLoader::registerPrefix('R', JPATH_LIBRARIES . '/ramblers');
+            if (file_exists(JPATH_SITE . '/ramblersOLD')) {
+                $this->xrmdir(JPATH_SITE . '/ramblersOLD');
+            }
         }
+    }
+
+    function xrmdir($dir) {
+        $items = scandir($dir);
+        foreach ($items as $item) {
+            if ($item === '.' || $item === '..') {
+                continue;
+            }
+            $path = $dir . '/' . $item;
+            if (is_dir($path)) {
+                $this->xrmdir($path);
+            } else {
+                unlink($path);
+            }
+        }
+        rmdir($dir);
     }
 
 }
