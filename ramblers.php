@@ -1,16 +1,17 @@
 <?php
 
 /**
- * @copyright   Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.
+ * @copyright   Copyright (C) 2022 Derby & SOuth Derbyshire Ramblers
  * @license     GNU General Public License version 2 or later.
+ * @author      Chris Vaughan - Derby & SOuth Derbyshire Ramblers
  */
 defined('_JEXEC') or die;
 
 /**
- * Mylib plugin class.
+ * Plugin to register the Ramblers Library extension
  *
  * @package     Joomla.plugin
- * @subpackage  System.mylib
+ * @subpackage  System.ramblers
  */
 class plgSystemRamblers extends JPlugin {
 
@@ -20,31 +21,8 @@ class plgSystemRamblers extends JPlugin {
      * return  void
      */
     public function onAfterInitialise() {
-        if (file_exists(JPATH_SITE . '/ramblers')) {
-            rename(JPATH_SITE . '/ramblers', JPATH_SITE . '/ramblersOLD');
-        }
         if (file_exists(JPATH_LIBRARIES . '/ramblers')) {
             JLoader::registerPrefix('R', JPATH_LIBRARIES . '/ramblers');
-            if (file_exists(JPATH_SITE . '/ramblersOLD')) {
-                $this->xrmdir(JPATH_SITE . '/ramblersOLD');
-            }
         }
     }
-
-    function xrmdir($dir) {
-        $items = scandir($dir);
-        foreach ($items as $item) {
-            if ($item === '.' || $item === '..') {
-                continue;
-            }
-            $path = $dir . '/' . $item;
-            if (is_dir($path)) {
-                $this->xrmdir($path);
-            } else {
-                unlink($path);
-            }
-        }
-        rmdir($dir);
-    }
-
 }
