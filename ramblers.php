@@ -7,6 +7,8 @@
  */
 defined('_JEXEC') or die;
 
+use Joomla\CMS\Plugin\CMSPlugin as JPlugin;
+
 /**
  * Plugin to register the Ramblers Library extension
  *
